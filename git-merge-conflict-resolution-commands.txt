@@ -1,0 +1,222 @@
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws
+$ git clone https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+Cloning into 'CoffeeWithJava-Sept25'...
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (14/14), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 3), reused 11 (delta 2), pack-reused 0 (from 0)
+Receiving objects: 100% (14/14), done.
+Resolving deltas: 100% (3/3), done.
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws
+$ cd CoffeeWithJava-Sept25/
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git checkout feature_helloWorld
+branch 'feature_helloWorld' set up to track 'origin/feature_helloWorld'.
+Switched to a new branch 'feature_helloWorld'
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git status
+On branch feature_helloWorld
+Your branch is up to date with 'origin/feature_helloWorld'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git add .
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git commit -m 'readme updated'
+[feature_helloWorld 80832d8] readme updated
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 305 bytes | 30.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+   3793a61..80832d8  feature_helloWorld -> feature_helloWorld
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git add .
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git commit -m 'readme updated'
+[main 438745c] readme updated
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 326 bytes | 29.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+   f9604a6..438745c  main -> main
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git fetch --all
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (4/4), 1.83 KiB | 9.00 KiB/s, done.
+From https://github.com/vednexgen/CoffeeWithJava-Sept25
+   438745c..75001bd  main               -> origin/main
+   80832d8..f9290ab  feature_helloWorld -> origin/feature_helloWorld
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git pull
+Updating 438745c..75001bd
+Fast-forward
+ HelloWorld.java | 6 ++++++
+ README.md       | 2 ++
+ 2 files changed, 8 insertions(+)
+ create mode 100644 HelloWorld.java
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git add .
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git commit -m 'readme updated'
+[main 84f0dbb] readme updated
+ 1 file changed, 4 insertions(+)
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 40.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+   75001bd..84f0dbb  main -> main
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git fetch --all
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (main)
+$ git checkout feature_helloWorld
+Switched to branch 'feature_helloWorld'
+Your branch is behind 'origin/feature_helloWorld' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git pull
+Updating 80832d8..f9290ab
+Fast-forward
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git status
+On branch feature_helloWorld
+Your branch is up to date with 'origin/feature_helloWorld'.
+
+nothing to commit, working tree clean
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git add .
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git c
+checkout                     clean                        credential-helper-selector
+cherry                       clone                        credential-manager
+cherry-pick                  commit
+citool                       config
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git commit -m 'readme updated'
+[feature_helloWorld 5bcc2a2] readme updated
+ 1 file changed, 4 insertions(+)
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 328 bytes | 36.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+   f9290ab..5bcc2a2  feature_helloWorld -> feature_helloWorld
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git fecth --all
+git: 'fecth' is not a git command. See 'git --help'.
+
+The most similar command is
+        fetch
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git fetch --all
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git pull origin main
+From https://github.com/vednexgen/CoffeeWithJava-Sept25
+ * branch            main       -> FETCH_HEAD
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld|MERGING)
+$ git status
+On branch feature_helloWorld
+Your branch is up to date with 'origin/feature_helloWorld'.
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld|MERGING)
+$ git add .
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld|MERGING)
+$ git commit -m 'readme updated'
+[feature_helloWorld dbb64d3] readme updated
+
+bhush@VijetaBafna MINGW64 /h/My Drive/Training/temp/ws/CoffeeWithJava-Sept25 (feature_helloWorld)
+$ git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 355 bytes | 32.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vednexgen/CoffeeWithJava-Sept25.git
+   5bcc2a2..dbb64d3  feature_helloWorld -> feature_helloWorld

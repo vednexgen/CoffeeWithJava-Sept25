@@ -1,7 +1,4 @@
 # CoffeeWithJava-Sept25
 
-
-This is in main branch.
-
-this is second line in feature branch.
+This is the project to demonstrate java basics.
 

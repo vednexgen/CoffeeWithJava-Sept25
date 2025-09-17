@@ -6,6 +6,8 @@ public class AnimalApplication {
         Animal dog = new Dog();
         dog.sound();
 //        dog.getLegsCount();
+        System.out.println(Animal.GROUP);
+        System.out.println(Animal.getGroupName());
 
         Animal cat = new Cat();
         cat.sound();

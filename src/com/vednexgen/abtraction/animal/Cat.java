@@ -1,6 +1,7 @@
 package com.vednexgen.abtraction.animal;
 
-public class Cat implements Animal {
+public class Cat implements Animal, Action {
+
     @Override
     public void sound() {
         System.out.println("Cat meows.....");
@@ -13,5 +14,10 @@ public class Cat implements Animal {
 
     public void bite() {
         System.out.println("Bite.....");
+    }
+
+    @Override
+    public void run() {
+
     }
 }

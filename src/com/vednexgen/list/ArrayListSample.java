@@ -5,6 +5,9 @@ import com.vednexgen.domain.Car;
 import com.vednexgen.domain.Person;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.concurrent.ConcurrentMap;
 
 public class ArrayListSample {
 
@@ -13,17 +16,17 @@ public class ArrayListSample {
     public static void main(String[] args) {
         ArrayList<String> fruits = new ArrayList<>();
 
-
         IO.println(fruits.isEmpty());
         IO.println(fruits.size());
 
         fruits.add("Banana");  //  0
         fruits.add("Apple");  // 1
-        fruits.add("Orange"); // 2
-        fruits.add("Strawberry");  // 3
+        fruits.add(null); // 2
+        fruits.add(null);  // 3
+        fruits.add("Apple");  // 5
 //        fruits.add(10);
 
-        IO.println("contains " + fruits.contains("Apdsdsple"));
+        IO.println("contains " + fruits.contains("Apple"));
 
         IO.println(fruits.isEmpty());
         IO.println(fruits.size());
@@ -57,7 +60,6 @@ public class ArrayListSample {
                 Car car = (Car) obj;
             }
         }
-
 
     }
 }

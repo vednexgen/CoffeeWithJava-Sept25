@@ -9,6 +9,7 @@ public class UserPassValidator {
         } else {
             return "Username is Okay!";
         }
+
     }
 
     public static String validatePassword(String password) {
